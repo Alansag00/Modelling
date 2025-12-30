@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÉLITE NOIR Models</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0b0b0b;
+  color:#eaeaea;
+}
+
+.container{
+  max-width:500px;
+  margin:40px auto;
+  background:#121212;
+  border-radius:14px;
+  box-shadow:0 0 40px rgba(255,215,0,0.15);
+  overflow:hidden;
+}
+
+.header{
+  padding:30px;
+  text-align:center;
+  background:linear-gradient(135deg,#000,#1a1a1a);
+  border-bottom:1px solid #222;
+}
+
+.header h1{
+  margin:0;
+  color:#d4af37;
+  letter-spacing:2px;
+}
+
+.header p{
+  font-size:13px;
+  opacity:0.8;
+}
+
+form{
+  padding:25px;
+}
+
+label{
+  display:block;
+  margin-top:14px;
+  font-size:13px;
+  color:#bbb;
+}
+
+input,select,textarea{
+  width:100%;
+  margin-top:6px;
+  padding:11px;
+  border-radius:6px;
+  border:1px solid #333;
+  background:#0e0e0e;
+  color:#fff;
+}
+
+input[type=file]{
+  padding:8px;
+}
+
+textarea{
+  resize:none;
+  height:70px;
+}
+
+button{
+  width:100%;
+  margin-top:22px;
+  padding:13px;
+  background:linear-gradient(to right,#bfa14a,#d4af37);
+  border:none;
+  color:#000;
+  font-size:16px;
+  border-radius:30px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+button:hover{
+  opacity:0.9;
+}
+
+.note{
+  text-align:center;
+  font-size:11px;
+  color:#777;
+  margin-top:14px;
+}
+
+footer{
+  text-align:center;
+  font-size:11px;
+  padding:12px;
+  background:#0a0a0a;
+  color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>ÉLITE NOIR</h1>
+    <p>Luxury Modeling & Talent Management</p>
+  </div>
+
+  <!-- Replace ACTION later if needed -->
+  <form action="thankyou.html" method="POST" enctype="multipart/form-data">
+
+    <label>Full Name</label>
+    <input type="text" required>
+
+    <label>Email Address</label>
+    <input type="email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" required>
+
+    <label>Gender</label>
+    <select required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Age</label>
+    <input type="number">
+
+    <label>Height (cm)</label>
+    <input type="number">
+
+    <label>Permanent Address</label>
+    <textarea placeholder="Full permanent residential address"></textarea>
+
+    <label>Upload Portfolio Images (Optional)</label>
+    <input type="file" accept="image/*" multiple>
+
+    <button type="submit">Submit Application</button>
+
+    <div class="note">
+      All submissions are confidential and reviewed by casting professionals.
+    </div>
+
+  </form>
+
+  <footer>
+    © 2025 Élite Noir Models
+  </footer>
+</div>
+
+</body>
+</html>
